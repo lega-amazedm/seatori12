@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Tori - Японская кухня</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="logo.png" alt="Sea Tori" />
+            </div>
+            <div class="preloader-text">Всё хорошо!<br>Скоро мы вас перенаправим на сайт…</div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Sea Tori Logo">
+                <h1>Sea Tori</h1>
+            </a>
+            <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="mainNav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="menu.html">Меню</a>
+            </nav>
+            <!-- <button id="loginBtn" class="auth-btn">Войти</button> -->
+            <!-- <div class="user-profile" style="display: none;"> ... </div> -->
+        </div>
+    </header>
+
+    <section class="slideshow">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+            <div class="slide-content">
+                <h2 class="slide-title">Добро пожаловать в Sea Tori</h2>
+                <p class="slide-description">Откройте для себя настоящую японскую кухню в самом сердце города</p>
+                <a href="menu.html" class="slide-btn">Меню</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+            <div class="slide-content">
+                <h2 class="slide-title">Свежие суши и роллы</h2>
+                <p class="slide-description">Только лучшие ингредиенты и традиционные рецепты</p>
+                <a href="menu.html" class="slide-btn">Меню</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+            <div class="slide-content">
+                <h2 class="slide-title">Уютная атмосфера</h2>
+                <p class="slide-description">Погрузитесь в атмосферу настоящей Японии</p>
+                <a href="menu.html" class="slide-btn">Меню</a>
+            </div>
+        </div>
+        <button class="slideshow-arrow prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slideshow-arrow next"><i class="fas fa-chevron-right"></i></button>
+        <div class="slideshow-controls">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+    <section class="features">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-fish feature-icon"></i>
+                <h3 class="feature-title">Свежие ингредиенты</h3>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-utensils feature-icon"></i>
+                <h3 class="feature-title">Опытные повара</h3>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-truck feature-icon"></i>
+                <h3 class="feature-title">Быстрая доставка</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p><b>+7 (962) 376-05-05</b> &nbsp;|&nbsp; <a href="">&nbsp;|&nbsp; ул Эмиргамзаева, 42Б/1</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sea Tori. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно авторизации -->
+    <!-- <div id="authModal" class="modal"> ... </div> -->
+
+    <script src="css/js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- <script src="js/auth.js"></script> -->
+    <script src="js/burger.js"></script>
+</body>
+</html> 
